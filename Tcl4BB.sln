@@ -1,49 +1,19 @@
-Microsoft Visual Studio Solution File, Format Version 8.00
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual C++ Express 2005
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tcl4BB", "Tcl4BB.vcproj", "{7B6C2BF4-BB05-4B19-9FBD-944F6088149E}"
-	ProjectSection(ProjectDependencies) = postProject
-	EndProjectSection
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tcl", "tcl8.4.12\win\tcl.vcproj", "{08A06D72-0F3A-467F-9B24-443AD21412EA}"
-	ProjectSection(ProjectDependencies) = postProject
-	EndProjectSection
 EndProject
 Global
-	GlobalSection(SolutionConfiguration) = preSolution
-		Debug = Debug
-		Debug Static = Debug Static
-		Debug Static Threads = Debug Static Threads
-		Release = Release
-		Release Static = Release Static
-		Release Static Threads = Release Static Threads
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
 	EndGlobalSection
-	GlobalSection(ProjectConfiguration) = postSolution
-		{7B6C2BF4-BB05-4B19-9FBD-944F6088149E}.Debug.ActiveCfg = Debug|Win32
-		{7B6C2BF4-BB05-4B19-9FBD-944F6088149E}.Debug.Build.0 = Debug|Win32
-		{7B6C2BF4-BB05-4B19-9FBD-944F6088149E}.Debug Static.ActiveCfg = Debug|Win32
-		{7B6C2BF4-BB05-4B19-9FBD-944F6088149E}.Debug Static.Build.0 = Debug|Win32
-		{7B6C2BF4-BB05-4B19-9FBD-944F6088149E}.Debug Static Threads.ActiveCfg = Debug|Win32
-		{7B6C2BF4-BB05-4B19-9FBD-944F6088149E}.Debug Static Threads.Build.0 = Debug|Win32
-		{7B6C2BF4-BB05-4B19-9FBD-944F6088149E}.Release.ActiveCfg = Release|Win32
-		{7B6C2BF4-BB05-4B19-9FBD-944F6088149E}.Release.Build.0 = Release|Win32
-		{7B6C2BF4-BB05-4B19-9FBD-944F6088149E}.Release Static.ActiveCfg = Release|Win32
-		{7B6C2BF4-BB05-4B19-9FBD-944F6088149E}.Release Static.Build.0 = Release|Win32
-		{7B6C2BF4-BB05-4B19-9FBD-944F6088149E}.Release Static Threads.ActiveCfg = Release|Win32
-		{7B6C2BF4-BB05-4B19-9FBD-944F6088149E}.Release Static Threads.Build.0 = Release|Win32
-		{08A06D72-0F3A-467F-9B24-443AD21412EA}.Debug.ActiveCfg = Debug|Win32
-		{08A06D72-0F3A-467F-9B24-443AD21412EA}.Debug.Build.0 = Debug|Win32
-		{08A06D72-0F3A-467F-9B24-443AD21412EA}.Debug Static.ActiveCfg = Debug Static|Win32
-		{08A06D72-0F3A-467F-9B24-443AD21412EA}.Debug Static.Build.0 = Debug Static|Win32
-		{08A06D72-0F3A-467F-9B24-443AD21412EA}.Debug Static Threads.ActiveCfg = Debug Static|Win32
-		{08A06D72-0F3A-467F-9B24-443AD21412EA}.Debug Static Threads.Build.0 = Debug Static|Win32
-		{08A06D72-0F3A-467F-9B24-443AD21412EA}.Release.ActiveCfg = Release|Win32
-		{08A06D72-0F3A-467F-9B24-443AD21412EA}.Release.Build.0 = Release|Win32
-		{08A06D72-0F3A-467F-9B24-443AD21412EA}.Release Static.ActiveCfg = Release Static|Win32
-		{08A06D72-0F3A-467F-9B24-443AD21412EA}.Release Static.Build.0 = Release Static|Win32
-		{08A06D72-0F3A-467F-9B24-443AD21412EA}.Release Static Threads.ActiveCfg = Release Static|Win32
-		{08A06D72-0F3A-467F-9B24-443AD21412EA}.Release Static Threads.Build.0 = Release Static|Win32
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B6C2BF4-BB05-4B19-9FBD-944F6088149E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7B6C2BF4-BB05-4B19-9FBD-944F6088149E}.Debug|Win32.Build.0 = Debug|Win32
+		{7B6C2BF4-BB05-4B19-9FBD-944F6088149E}.Release|Win32.ActiveCfg = Release|Win32
+		{7B6C2BF4-BB05-4B19-9FBD-944F6088149E}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-	EndGlobalSection
-	GlobalSection(ExtensibilityAddIns) = postSolution
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
