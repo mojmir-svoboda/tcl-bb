@@ -24,13 +24,6 @@ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
-#if (_MSC_VER >= 1400)
-#pragma comment(lib, "user32.lib")
-#pragma comment(lib, "shell32.lib")
-#pragma comment(lib, "advapi32.lib")
-#define _CRT_SECURE_NO_DEPRECATE
-#endif
-
 #define MMNODRV
 #define MMNOMMSYSTEM
 #define MMNOWAVE
@@ -42,12 +35,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #define MMNOMMIO
 #define MMNOMCI
 
-#include "../sdk/bbapi.h"
-#pragma comment(lib, "../sdk/blackbox.lib")
-
-#include <mmsystem.h>
-#pragma comment( lib, "Winmm.lib" )
-
+#include <blackbox/BBApi.h>
 #define TCL_CFGVAL_ENCODING "cp1252"
 #define TCL_THREADS 1 
 #define STATIC_BUILD
