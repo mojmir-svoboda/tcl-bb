@@ -46,19 +46,6 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #undef STATIC_BUILD
 #undef TCL_CFG_OPTIMIZED
 
-#if defined(_DEBUG)
-#define TCL_LIB_DEBUG "g"
-#else
-#define TCL_LIB_DEBUG ""
-#endif
-#define TCL_LIB_THREAD "t"
-#define TCL_LIB_STATIC "s"
-#define TCL_LIB_MSVCRT "x"
-
-#pragma comment(lib, "tcl" STRINGIFY(TCL_MAJOR_VERSION) STRINGIFY(TCL_MINOR_VERSION) TCL_LIB_THREAD TCL_LIB_STATIC TCL_LIB_DEBUG TCL_LIB_MSVCRT".lib")
-#pragma comment(lib, "tcldde12" TCL_LIB_STATIC TCL_LIB_DEBUG TCL_LIB_MSVCRT ".lib")
-#pragma comment(lib, "tclreg11" TCL_LIB_STATIC TCL_LIB_DEBUG TCL_LIB_MSVCRT ".lib")
-
 #define BB_ABOUTSTYLE		10203	// (definition reserved by bb4win)
 #define BB_ABOUTPLUGINS		10204	// (definition reserved by bb4win)
 

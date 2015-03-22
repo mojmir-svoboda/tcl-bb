@@ -12,7 +12,7 @@ private:
 	
 public:
 	void NewDBroam(char *name, char *tcl) {
-		workers.insert(name, tcl);
+		workers.insert(std::make_pair(name, tcl));
 		//workers.push_back(new dbroam(name, tcl));
 	}
 
