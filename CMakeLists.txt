@@ -30,3 +30,4 @@ target_link_libraries(bbTcl version comctl32 user32 shell32 advapi32 netapi32 wi
 target_link_libraries(bbTcl tcl tclstub)
 
 install(TARGETS bbTcl RUNTIME DESTINATION plugins/bbTcl)
+install(DIRECTORY ${CMAKE_SOURCE_DIR}/3rd_party/tcl8.6.4/library DESTINATION plugins/bbTCL/)
