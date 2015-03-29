@@ -362,8 +362,11 @@ int beginPluginEx(HINSTANCE h, HWND w)
 	strcpy(temp,ReadString(path,"tcl-bb.start.eval:","\0"));
 	if(temp[0]!=0)
 	{
-		if (Tcl_EvalFile(interp,temp) == TCL_ERROR && !suppressErrors)
-			MBoxErrorValue(Tcl_GetString(Tcl_GetObjResult(interp)));
+		if (Tcl_EvalFile(interp, temp) == TCL_ERROR && !suppressErrors)
+		{
+			const char *trace = Tcl_GetVar(interp, "errorInfo", TCL_GLOBAL_ONLY);
+			MBoxErrorValue(trace);
+		}
 	}
 	
 

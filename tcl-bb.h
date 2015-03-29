@@ -38,7 +38,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <blackbox/BBApi.h>
 #define TCL_CFGVAL_ENCODING "cp1252"
 #define TCL_THREADS 1 
-#define STATIC_BUILD
+//#define STATIC_BUILD
 #define TCL_CFG_OPTIMIZED
 #include <tcl.h>
 #undef TCLCFGVAL_ENCODING
