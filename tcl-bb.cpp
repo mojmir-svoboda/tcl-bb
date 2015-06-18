@@ -152,11 +152,11 @@ char* CleanTclPath(const char* path)
 void SetScriptDir(const char* path) {
 	char *s = "set tcl_library %s%s/";
 	char *t = NULL;
-#if defined(_DEBUG)
-	char *p = "E:/shell/xoblite/plugins/Tcl4BB/";
-#else
+//#if defined(_DEBUG)
+//	char *p = "E:/shell/xoblite/plugins/Tcl4BB/";
+//#else
 	char *p = CleanTclPath(path);
-#endif
+//#endif
 
 	t = (char *)malloc(sizeof(char) * (strlen(p) + strlen(s) + 7 + 1));
 	sprintf(t, s, p, "library");
@@ -195,7 +195,10 @@ int beginPluginEx(HINSTANCE h, HWND w)
 	wc.lpszClassName = MY_PLUGIN_NAME;
 	if(!RegisterClass(&wc))
 	{
-		MBoxErrorValue("Could not register window class...");
+		char buff[1024];
+		DWORD lasterr = GetLastError();
+		_snprintf_s(buff, 1024, "bbTcl: Could not register window class: errno=0x%08x", lasterr);
+		MBoxErrorValue(buff);
 		return PLUGIN_FAILED;
 	}
 
