@@ -1,5 +1,5 @@
 #include <tcl.h>
-#include <hash_map>
+#include <unordered_map>
 
 #define _CRT_SECURE_NO_DEPRECATE
 
@@ -8,7 +8,7 @@
 #endif
 class dbroam_factory {
 private:
-	stdext::hash_map<char *, char *> workers;
+	std::unordered_map<char *, char *> workers;
 	
 public:
 	void NewDBroam(char *name, char *tcl) {
